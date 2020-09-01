@@ -2,15 +2,18 @@ import random
 
 n = random.randint(1, 100)
 print("Jag tänker på ett nummer mellan 1 & 100. Vilket?")
-chances = 0
 
 
-def mainloop():
-    global chances
+def ask_number():
+    text = input("Din Gissning: ")
+    as_number = int(text)
+    return as_number
+
+
+def mainloop(n):
+    chances = 0
     while True:
-        text = input("Din Gissning: ")
-        as_number = int(text)
-
+        as_number = ask_number()
         chances += 1
         if as_number == n:
             print("Korrekt!")
@@ -25,4 +28,4 @@ def mainloop():
     return
 
 
-mainloop()
+mainloop(n)
