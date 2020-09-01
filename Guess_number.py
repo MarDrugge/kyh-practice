@@ -17,7 +17,6 @@ def mainloop(n):
         chances += 1
         if as_number == n:
             print("Korrekt!")
-            print("Antal gissningar:", chances)
             break
 
         if as_number < n:
@@ -25,7 +24,9 @@ def mainloop(n):
 
         if as_number > n:
             print("Fel, mitt nummer är lägre. Försök igen!!")
-    return
+    return chances
 
 
-mainloop(n)
+chances = mainloop(n)
+
+print("Antal gissningar:", chances)
