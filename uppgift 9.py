@@ -16,7 +16,7 @@ def game(number_of_questions, max_value):
             print(f"Fel... Det blir {a+b}")
             print("---")
 
-        print(f"Du fick {correct_answers} av {number_of_questions} rätt.")
+    print(f"Du fick {correct_answers} av {number_of_questions} rätt.")
 
 
 if __name__ == '__main__':
