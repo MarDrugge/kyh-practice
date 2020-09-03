@@ -12,6 +12,18 @@ def main():
     for i in range(10, 0, -1):
         print(i)
 
+    print("Del 4")
+    total = 0
+    for i in range(7, 1001):
+        total += i
+    print(total)
+
+    print("Del 5")
+    product = 1
+    for i in range(1, 1001):
+        product *= i
+    print(product)
+
 
 if __name__ == '__main__':
     main()
