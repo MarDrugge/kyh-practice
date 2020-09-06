@@ -20,6 +20,9 @@ def game(number_of_questions, max_value):
 
 
 if __name__ == '__main__':
-    number = int(input("Hur många frågor?"))
-    max_value = int(input("Största tal?"))
-    game(number, max_value)
+    try:
+        number = int(input("Hur många frågor?"))
+        max_value = int(input("Största tal?"))
+        game(number, max_value)
+    except ValueError:
+        print("Ange ett heltal, prova igen")
