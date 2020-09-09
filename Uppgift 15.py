@@ -11,4 +11,5 @@ def main():
             vowel_count += 1
     print(f'Antal ord: {count} \nAntal vokaler: {vowel_count}')
 
+
 main()
