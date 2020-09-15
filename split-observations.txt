@@ -1,0 +1,19 @@
+"abc,def,ghj".split(2)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: must be str or None, not int
+
+
+"abc,def,ghj".split(,)
+  File "<input>", line 1
+    "abc,def,ghj".split(,)
+                        ^
+SyntaxError: invalid syntax
+
+"abc,def,ghj".split(xv)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'xv' is not defined
+
+
+
