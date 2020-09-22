@@ -27,3 +27,4 @@ if __name__ == '__main__':
     html += '</table></html>'
     OUTPUT_PATH.write_text(html, encoding='utf8')
     webbrowser.open(str(OUTPUT_PATH))
+
