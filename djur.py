@@ -22,7 +22,7 @@ if __name__ == '__main__':
     for d in djur:
         cell_2 = 'Vegetarian'
         if d.carnivore:
-          cell_2 = 'Köttätare'
+            cell_2 = 'Köttätare'
         html += f'<tr><td><a href="{d.wiki_url}">{d.name}</td><td>{cell_2}</td></tr>\n'
     html += '</table></html>'
     OUTPUT_PATH.write_text(html, encoding='utf8')
