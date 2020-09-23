@@ -21,7 +21,6 @@ class Djur:
         return f'<tr><td><a href="{self.wiki_url}">{self.name}</td><td>{cell_2}</td></tr>\n'
 
 
-
 if __name__ == '__main__':
     djur = []
     zebra = Djur('Zebra', False, 'https://sv.wikipedia.org/wiki/Zebror')
