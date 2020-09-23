@@ -17,6 +17,10 @@ class Djur:
         else:
             return "Vegetarian"
 
+    def get_html_table_row(self):
+        return f'<tr><td><a href="{self.wiki_url}">{self.name}</td><td>{cell_2}</td></tr>\n'
+
+
 
 if __name__ == '__main__':
     djur = []
@@ -33,7 +37,7 @@ if __name__ == '__main__':
     html = '<html><table>'
     for d in djur:
         cell_2 = d.carnivore_or_vegetarian()
-        html += f'<tr><td><a href="{d.wiki_url}">{d.name}</td><td>{cell_2}</td></tr>\n'
+        html += d.get_html_table_row()
     html += '</table></html>'
     OUTPUT_PATH.write_text(html, encoding='utf8')
     webbrowser.open(str(OUTPUT_PATH))
