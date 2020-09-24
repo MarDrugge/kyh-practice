@@ -27,16 +27,16 @@ def main():
     quiz = QuizzWebServiceAPI()
     quiz_ls = quiz.get_all_questions()
 
-    print(f'Det finn {len(quiz_ls)} i Quiz-Databasen')
-    inp = input(f'Gör ett val:\n1. Lägg till Fråga.\n2. Avsluta programmet\n')
-    if inp == "1":
-        prompt = input("Fråga: ")
-        answer = input("Svar: ")
-        alternatives = input("Alternativ: ").split(",")
-        quiz.add_question(prompt=prompt, answer=answer, alternatives=alternatives)
-    if inp == 2:
-        return
-
+    while True:
+        print(f'Det finn {len(quiz_ls)} i Quiz-Databasen')
+        inp = input(f'Gör ett val:\n1. Lägg till Fråga.\n2. Avsluta programmet\n')
+        if inp == "1":
+            prompt = input("Fråga: ")
+            answer = input("Svar: ")
+            alternatives = input("Alternativ: ").split(",")
+            quiz.add_question(prompt=prompt, answer=answer, alternatives=alternatives)
+        if inp == 2:
+            break
 
 
 if __name__ == '__main__':
