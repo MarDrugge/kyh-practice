@@ -1,9 +1,9 @@
 def maximum(a, b, c):       # 39.1
-    if b < a < c:
+    if a > b and a > c:
         return a
-    if a < b < c:
+    if b > a and b > c:
         return b
-    if a < c < b:
+    if c > a and c > b:
         return c
 
 
