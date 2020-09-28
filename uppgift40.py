@@ -24,4 +24,5 @@ def in_range(value, min, max):  # 40.3
     else:
         return False
 
+
 print(in_range(1, 0, 2))
