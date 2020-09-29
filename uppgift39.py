@@ -16,19 +16,19 @@ def total(num):      # 39.2
     count = 0
     for elem in num:
         count += elem
-    print(count)
+    return count
 
 
 numbers = [1, 2, 3]
-total(numbers)
+print(total(numbers))
 
 
 def produkt(num):   # 39.3
     count = 1
     for elem in num:
         count *= elem
-    print(count)
+    return count
 
 
 numbers2 = [2, 3, 4]
-produkt(numbers2)
+print(produkt(numbers2))
