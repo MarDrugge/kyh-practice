@@ -37,6 +37,13 @@ def test_stor_bokstav2():
     assert expected == got
 
 
+def test_stor_bokstav3():
+    expected = 0
+    got = stor_bokstav("")
+    assert expected == got
+
+
+
 def test_in_range():
     expected = True
     got = in_range(2, 1, 3)
