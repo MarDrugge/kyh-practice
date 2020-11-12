@@ -3,28 +3,30 @@ from pathlib import Path
 
 lines = Path('TODO.txt')
 read = lines.read_text(encoding='utf8')
-split = read.splitlines()
+split_ls = read.splitlines()
 n = "\n"
 
 
 def alt_1():
     num = 0
-    for elem in split:
+    print('\n')
+    for elem in split_ls:
         num += 1
         print(f'{num}. {elem}')
+    print('\n')
 
 
 def alt_2():
     ny = input("Lägg till Uppgift: ").strip()
-    split.append(ny)
-    lines.write_text(f'{n.join(split)}', encoding='utf8')
+    split_ls.append(ny)
+    lines.write_text(f'{n.join(split_ls)}', encoding='utf8')
 
 
 def alt_3():
     del_task = int(input("Radera uppgift: "))
     index = del_task - 1
-    del split[index]
-    lines.write_text(f'{n.join(split)}', encoding='utf8')
+    del split_ls[index]
+    lines.write_text(f'{n.join(split_ls)}', encoding='utf8')
 
 
 def main():
@@ -37,7 +39,7 @@ def main():
         elif alt == "3":
             alt_3()
         elif alt == "4":
-            print("Programmet avbryts")
+            print("Programmet avbryts...")
             break
 
 

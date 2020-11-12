@@ -4,7 +4,7 @@ def main():
     vowel_count = 0
 
     def wordcount(txt):
-        return len(txt.split())
+        return len(txt.split_ls())
     text = input("Skriv en text: ")
     count = wordcount(text)
     for c in text:
